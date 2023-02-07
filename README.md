@@ -1,24 +1,9 @@
-# portfolio
+# Portfolio
 
-## Project setup
-```
-npm install
-```
+### PT
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Estou criando este projeto para servir de portfolio e aprimorar meu conhecimento em VUE.JS e CSS.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### EN
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+I'm coding this project to be my portfolio and improve my skills in VUE.JS and CSS.
