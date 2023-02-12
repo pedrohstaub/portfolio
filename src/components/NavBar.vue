@@ -1,25 +1,39 @@
 <template>
-    <div class="teste">
-        <nav class="flex-container">
-            <span class="material-icons md-48">developer_mode</span>
-            <div>
-                <ul>
-                    <li class="flex-container-item-main"><a href="#header">Contato</a></li>
-                    <li class="flex-container-item-main"><a href="#about">Sobre</a></li>
-                    <li class="flex-container-item-main"><a href="#tech">Tecnologias</a></li>
-                    <li class="flex-container-item-main"><a href="#projects">Projetos</a></li>
-                    <li class="flex-container-item-main"><a href="#projects">Projetos</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- <hr style="border: 0; border-top: 1px solid #CCC; margin: 1%"> -->
-    </div>
+    <nav>
+        <span class="material-icons md-48">developer_mode</span>
+        <div class="mobile-menu" @click="teste">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div>
+            <ul class="nav-list">
+                <li class="menu-item"><a href="#header">Contato</a></li>
+                <li class="menu-item"><a href="#about">Sobre</a></li>
+                <li class="menu-item"><a href="#tech">Tecnologias</a></li>
+                <li class="menu-item"><a href="#projects">Projetos</a></li>
+                <li class="menu-item"><a href="#projects">Projetos</a></li>
+            </ul>
+        </div>
+    </nav>
 </template>
 
 <script>
 
 export default {
+    data() {
+        return {
+            mobileMenu: '.mobile-menu'
+        }
+    },
     name: "NavBar",
+    methods: {
+        teste: function () {
+            let navList = document.querySelector(".nav-list");
+            console.log(this.mobileMenu);
+            navList.classList.toggle('active');
+        }
+    }
 }
 </script>
 
@@ -30,6 +44,10 @@ nav {
     position: fixed;
     margin: 0 !important;
     border-bottom: 2px solid #54545465;
+    height: 12vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around !important;
 }
 
 li {
@@ -40,16 +58,10 @@ li {
 a {
     text-decoration: none;
     width: 100%;
+    letter-spacing: 1px;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around !important;
-    width: 100%;
-}
-
-.flex-container-item-main {
+.menu-item {
     background-image: linear-gradient(to right, hwb(221 0% 13%), rgb(0, 160, 223));
     width: 120px;
     margin: 10px;
@@ -59,11 +71,11 @@ a {
     /* border: 1px solid white; */
 }
 
-.flex-container-item-main>a {
+.menu-item>a {
     color: white;
 }
 
-.flex-container-item {
+.menu-item-alternative {
     background-color: rgb(222, 222, 222);
     width: 120px;
     margin: 10px;
@@ -72,17 +84,17 @@ a {
     border-radius: 20px;
 }
 
-.flex-container-item>a {
+.menu-item-alternative>a {
     color: hwb(221 0% 13%);
 }
 
-.flex-container-item:hover {
+.menu-item-alternative:hover {
     background-color: hwb(221 0% 7% / 0.767);
     cursor: pointer;
 
 }
 
-.flex-container-item-main:hover {
+.menu-item:hover {
     background-color: hwb(221 0% 7% / 0.767);
     cursor: pointer;
     border: 1.5px solid #fff;
@@ -121,6 +133,66 @@ a {
 
     100% {
         font-size: 112%;
+    }
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 10px;
+}
+
+@media (max-width: 862px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav{
+        height: 8vh
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 35vw;
+        height: 92vh;
+        backdrop-filter: blur(3px);
+        transform: translateX(100%);
+        transition: transform 0.2s ease-in;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-right: -55%;
+        margin-top: 3%;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    .material-icons.md-48 {
+        background-image: linear-gradient(to right, hwb(221 0% 13%), rgb(0, 160, 223));
+        color: white;
+        font-size: 20px;
+        width: 55px;
+        /* margin: 10px; */
+        text-align: center;
+        line-height: 230%;
+        border-radius: 10px;
     }
 }
 </style>

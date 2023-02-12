@@ -31,7 +31,7 @@ html{
 }
 
 body {
-  background-color: black;
+  background-color: rgb(23, 23, 23);
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -42,5 +42,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #e8e8e8;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e2e2e; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+    border-radius: 5px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc; 
 }
 </style>

@@ -3,8 +3,8 @@
         <div class="content">
             <NavBar />
             <div class="div-content">
-                <!-- <img src="@/assets/jpeg/18274435.jpeg" alt="Pedro"> -->
-                <img src="@/assets/png/teste.png" alt="Pedro">
+                <img src="@/assets/jpeg/18274435.jpeg" alt="Pedro">
+                <!-- <img src="@/assets/png/teste.png" alt="Pedro"> -->
                 <h1>Pedro Henrique Staub</h1>
                 <h3>Desenvolvedor Web FullStack</h3>
                 <a class="social" href="https://github.com/pedrohstaub" target="_blank">
