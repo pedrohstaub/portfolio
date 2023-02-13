@@ -12,7 +12,7 @@
                 <li class="menu-item"><a href="#about">Sobre</a></li>
                 <li class="menu-item"><a href="#tech">Tecnologias</a></li>
                 <li class="menu-item"><a href="#projects">Projetos</a></li>
-                <li class="menu-item"><a href="<%= BASE_URL %>curriculo.pdf" target="_blank">Currículo</a></li>
+                <li class="menu-item"><a href="curriculo.pdf" target="_blank">Currículo</a></li>
             </ul>
         </div>
     </nav>
