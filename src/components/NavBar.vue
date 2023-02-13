@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <span class="material-icons md-48">developer_mode</span>
+        <span class="material-icons md-48">terminal</span>
         <div class="mobile-menu" @click="teste">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -12,7 +12,7 @@
                 <li class="menu-item"><a href="#about">Sobre</a></li>
                 <li class="menu-item"><a href="#tech">Tecnologias</a></li>
                 <li class="menu-item"><a href="#projects">Projetos</a></li>
-                <li class="menu-item"><a href="#projects">Projetos</a></li>
+                <li class="menu-item"><a href="/curriculo.pdf" target="_blank">Currículo</a></li>
             </ul>
         </div>
     </nav>
@@ -193,6 +193,7 @@ a {
         text-align: center;
         line-height: 230%;
         border-radius: 10px;
+        margin-left: -50px !important;
     }
 }
 </style>

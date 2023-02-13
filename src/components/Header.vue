@@ -3,18 +3,28 @@
         <div class="content">
             <NavBar />
             <div class="div-content">
-                <img src="@/assets/jpeg/18274435.jpeg" alt="Pedro">
+                <div><br><br><br><br></div>
+                <!-- <img src="@/assets/jpeg/18274435.jpeg" alt="Pedro"> -->
                 <!-- <img src="@/assets/png/teste.png" alt="Pedro"> -->
                 <h1>Pedro Henrique Staub</h1>
                 <h3>Desenvolvedor Web FullStack</h3>
-                <a class="social" href="https://github.com/pedrohstaub" target="_blank">
-                    <i class="devicon-github-original"></i>
-                    GitHub
-                </a>&nbsp;
-                <a class="social" href="https://www.linkedin.com/in/pedro-henrique-staub-962141101/" target="_blank">
-                    <i class="devicon-linkedin-plain"></i>
-                    LinkedIn
-                </a>
+                <div class="flex">
+                    <a class="social" href="https://github.com/pedrohstaub" target="_blank">
+                        <i class="devicon-github-original"></i>
+                        GitHub
+                    </a>&nbsp;
+                    <a class="social" href="https://www.linkedin.com/in/pedro-henrique-staub-962141101/"
+                        target="_blank">
+                        <i class="devicon-linkedin-plain"></i>
+                        LinkedIn
+                    </a>&nbsp;
+                    <a class="social" href="https://api.whatsapp.com/send?phone=5551997177824&text=Olá" target="_blank">
+                        <span class="material-icons">
+                            phone_android
+                        </span>
+                        Telefone
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -42,9 +52,13 @@ img {
     background-size: cover; */
     height: 60vh;
     margin: 0 !important;
-    background: linear-gradient(-50deg, #2d2dfa, #00A0DF, #00005c,#000);
+    background: linear-gradient(-50deg, #2d2dfa, #00A0DF, #00005c, #000);
     background-size: 400% 400%;
     animation: gradient 25s ease infinite;
+}
+
+.flex {
+    display: block;
 }
 
 @keyframes gradient {
@@ -61,10 +75,15 @@ img {
     }
 }
 
+.material-icons {
+    color: white;
+    vertical-align: middle;
+}
+
 .div-content {
     padding-bottom: 10%;
     padding-top: 10%;
-    text-align: left;
+    text-align: center;
     margin: 5%;
     margin-top: 0 !important;
 }
@@ -87,6 +106,7 @@ a {
     color: white;
     font-size: 125%;
     font-weight: bold;
+    vertical-align: middle;
 }
 
 .social:hover {
@@ -143,6 +163,22 @@ a {
     100% {
         width: 47vh;
         padding: 12px;
+    }
+}
+
+@media (max-width: 862px) {
+    .social {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        height: 50vh;
     }
 }
 </style>

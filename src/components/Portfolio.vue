@@ -32,7 +32,7 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />
-          
+
       </div>
       <br />
       <hr>
@@ -41,12 +41,14 @@
       <h1>
         Projetos
       </h1>
-      <br/>
+      <br />
       <div class="projects">
-          <card-projects :titleCard="ibnaName" :text="ibnaText" :img="ibnaImg" :link="ibnaLink"></card-projects>
-          <card-projects :titleCard="solutioName" :text="solutioText" :img="solutioImg" :link="solutioLink"></card-projects>
-          <card-projects :titleCard="dayzName" :text="dayzText" :img="dayzImg" :link="dayzLink"></card-projects>
-          <card-projects :titleCard="portfolioName" :text="portfolioText" :img="portfolioImg" :link="portfolioLink"></card-projects>
+        <card-projects :titleCard="ibnaName" :text="ibnaText" :img="ibnaImg" :link="ibnaLink"></card-projects>
+        <card-projects :titleCard="solutioName" :text="solutioText" :img="solutioImg"
+          :link="solutioLink"></card-projects>
+        <card-projects :titleCard="dayzName" :text="dayzText" :img="dayzImg" :link="dayzLink"></card-projects>
+        <card-projects :titleCard="portfolioName" :text="portfolioText" :img="portfolioImg"
+          :link="portfolioLink"></card-projects>
       </div>
     </div>
   </div>
@@ -107,9 +109,8 @@ a {
 }
 
 hr {
-  border: none;
+  border-color: #303030;
   height: 1px;
-  background-color: #ffffffa7
 }
 
 .tech>img {

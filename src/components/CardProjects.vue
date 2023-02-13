@@ -39,14 +39,14 @@ export default {
             required: true,
             default: require('@/assets/png/Stargate.png')
         },
-        data(){
-            return{
+        data() {
+            return {
                 showLink: false
             }
         },
-        methods:{
-            verifyLink(){
-                if(this.link != '#'){
+        methods: {
+            verifyLink() {
+                if (this.link != '#') {
                     this.showLink = true;
                 }
             }
@@ -56,6 +56,10 @@ export default {
 </script>
 
 <style scoped>
+hr {
+    border-color: #303030
+}
+
 .card-outter {
     width: 47%;
     height: 286px;
@@ -98,6 +102,7 @@ export default {
 .card-footer>a>span {
     vertical-align: middle;
 }
+
 .card-footer>a {
     text-decoration: none;
     color: #fff;
@@ -111,6 +116,10 @@ export default {
 
 .card-inner>p {
     text-align: left
+}
+
+.card-footer>a:hover {
+    color: #ccc;
 }
 
 .module {
