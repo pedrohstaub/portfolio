@@ -62,7 +62,7 @@ a {
 }
 
 .menu-item {
-    background-image: linear-gradient(to right, hwb(221 0% 13%), rgb(0, 160, 223));
+    background-image: linear-gradient(to right, #2d2dfa, #00A0DF);
     width: 120px;
     margin: 10px;
     text-align: center;
@@ -95,7 +95,7 @@ a {
 }
 
 .menu-item:hover {
-    background-color: hwb(221 0% 7% / 0.767);
+    background-color: #0068d6;
     cursor: pointer;
     border: 1.5px solid #fff;
     animation: animation-button 100ms;
@@ -103,7 +103,7 @@ a {
 }
 
 .material-icons.md-48 {
-    background-image: linear-gradient(to right, hwb(221 0% 13%), rgb(0, 160, 223));
+    background-image: linear-gradient(to right, #2d2dfa, #00A0DF);
     color: white;
     font-size: 35px;
     width: 90px;
@@ -185,7 +185,7 @@ a {
     }
 
     .material-icons.md-48 {
-        background-image: linear-gradient(to right, hwb(221 0% 13%), rgb(0, 160, 223));
+        background-image: linear-gradient(to right,  #2d2dfa, #00A0DF);
         color: white;
         font-size: 20px;
         width: 55px;

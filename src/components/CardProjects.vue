@@ -64,7 +64,7 @@ export default {
     max-height: 400px;
     min-height: 100px;
     padding: 1rem;
-    background: linear-gradient(to right, hwb(221 0% 13%), rgb(0, 160, 223));
+    background: linear-gradient(to right, #2d2dfa, #00A0DF);
     padding: 3px;
     margin-bottom: 2%;
     border-radius: 5px;

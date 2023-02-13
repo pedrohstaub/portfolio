@@ -42,12 +42,9 @@ img {
     background-size: cover; */
     height: 60vh;
     margin: 0 !important;
-    background: linear-gradient(-50deg, hwb(221 0% 13%), rgb(0, 160, 223), hwb(221 0% 56%), rgb(0, 0, 0));
+    background: linear-gradient(-50deg, #2d2dfa, #00A0DF, #00005c,#000);
     background-size: 400% 400%;
     animation: gradient 25s ease infinite;
-    /* height: 100vh; */
-
-
 }
 
 @keyframes gradient {
