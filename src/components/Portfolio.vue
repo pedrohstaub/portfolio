@@ -49,6 +49,8 @@
         <card-projects :titleCard="dayzName" :text="dayzText" :img="dayzImg" :link="dayzLink"></card-projects>
         <card-projects :titleCard="portfolioName" :text="portfolioText" :img="portfolioImg"
           :link="portfolioLink"></card-projects>
+        <card-projects :titleCard="discordName" :text="discordText" :img="discordImg"
+          :link="discordLink"></card-projects>
       </div>
     </div>
   </div>
@@ -77,7 +79,11 @@ export default {
       portfolioName: 'Portfolio',
       portfolioText: 'Portfólio feito em VueJS para demonstrar minha familiaridade com a tecnologia e expor meus projetos pessoais e profissionais.',
       portfolioImg: require('../assets/png/vue-logo.png'),
-      portfolioLink: 'https://github.com/pedrohstaub/portfolio'
+      portfolioLink: 'https://github.com/pedrohstaub/portfolio',
+      discordName: 'Discord Login',
+      discordText: 'Página com botão de login que autentica as credenciais através da API do Discord. Projeto desenvolvido com PHP.',
+      discordImg: require('../assets/png/discord-logo.png'),
+      discordLink: 'https://github.com/pedrohstaub/discord_login'
     }
   },
   props: {
