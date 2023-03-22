@@ -8,11 +8,13 @@
         </div>
         <div>
             <ul class="nav-list">
-                <li class="menu-item"><a href="#header">Contato</a></li>
-                <li class="menu-item"><a href="#about">Sobre</a></li>
-                <li class="menu-item"><a href="#tech">Tecnologias</a></li>
-                <li class="menu-item"><a href="#projects">Projetos</a></li>
-                <li class="menu-item"><a href="curriculo.pdf" target="_blank">Currículo</a></li>
+                <li class="menu-item"><a href="#header">{{ $t('nav.b1') }}</a></li>
+                <li class="menu-item"><a href="#about">{{ $t('nav.b2') }}</a></li>
+                <li class="menu-item"><a href="#tech">{{ $t('nav.b3') }}</a></li>
+                <li class="menu-item"><a href="#projects">{{ $t('nav.b4') }}</a></li>
+                <li class="menu-item"><a :href="$t('nav.cvLink')" target="_blank">{{ $t('nav.b5') }}</a></li>
+                <li class="menu-flag"><a href="#" @click="setLocale('pt_br')"><img class="flag" src="https://flagsapi.com/BR/flat/32.png"></a></li>
+                <li class="menu-flag"><a href="#" @click="setLocale('en')"><img class="flag" src="https://flagsapi.com/US/flat/32.png"></a></li>
             </ul>
         </div>
     </nav>
@@ -32,6 +34,9 @@ export default {
             let navList = document.querySelector(".nav-list");
             console.log(this.mobileMenu);
             navList.classList.toggle('active');
+        },
+        setLocale(locale){
+            this.$i18n.locale = locale;
         }
     }
 }
@@ -69,6 +74,15 @@ a {
     line-height: 230%;
     border-radius: 20px;
     /* border: 1px solid white; */
+}
+
+.menu-flag {
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 230%;
+    border-radius: 20px;
+    vertical-align: middle;
 }
 
 .menu-item>a {
@@ -148,13 +162,14 @@ a {
     margin: 10px;
 }
 
-@media (max-width: 862px) {
+@media (max-width: 1000px) {
     body {
         overflow-x: hidden;
     }
 
-    nav{
-        height: 8vh
+    nav {
+        height: 8vh;
+        justify-content: flex-end
     }
 
     .nav-list {
@@ -184,8 +199,18 @@ a {
         transform: translateX(0);
     }
 
+    .menu-flag {
+        width: 160px;
+    }
+    .menu-item {
+        width: 160px
+    }
+
+    .flag{
+        width: 50px;
+    }
     .material-icons.md-48 {
-        background-image: linear-gradient(to right,  #2d2dfa, #00A0DF);
+        background-image: linear-gradient(to right, #2d2dfa, #00A0DF);
         color: white;
         font-size: 20px;
         width: 55px;

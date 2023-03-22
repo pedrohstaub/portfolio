@@ -1,0 +1,55 @@
+{
+  "portfolio": {
+    "title": "Quem sou eu?",
+    "text1": "Meu nome é Pedro tenho { age } anos, sou desenvolvedor web fullstack.",
+    "text2": "Trabalho com desenvolvimento web desde 2019, fornecendo softwares para empresas de segurança privada e monitoramento. As soluções que construí junto com minha equipe impactam diariamente mais de <i>100.000</i> usuários no mundo inteiro. <br /><br /> Procuro oportunidades onde possa exercer minha experiência adquirida durante esses anos e estou sempre disposto a aprender e superar novos desafios.",
+    "title2": "Tecnologias",
+    "title3": "Projetos"
+  },
+  "projects": {
+    "ibna": {
+      "name": "SITE IBNA",
+      "text": "Site criado para a IBNA SCS, feito em PHP e JS e Bootstrap utilizando o tema Assan."
+    },
+    "solutio": {
+      "name": "SOLUTIO",
+      "text": "Participei da criação de diversos softwares de segurança privada utilizando tecnologias como: PHP, JS, HTML, CSS, MySql, Docker, etc..."
+    },
+    "dayz": {
+      "name": "DAYZ STATS",
+      "text": "API feita em PHP para exportar status de jogadores de um servidor de DayZ para um dashboard personalizado na web."
+    },
+    "portfolio": {
+      "name": "Portfolio",
+      "text": "Portfólio feito em VueJS para demonstrar minha familiaridade com a tecnologia e expor meus projetos pessoais e profissionais."
+    },
+    "discord": {
+      "name": "Discord Login",
+      "text": "Página com botão de login que autentica as credenciais através da API do Discord. Projeto desenvolvido com PHP."
+    }
+  },
+  "nav": {
+    "b1": "Contato",
+    "b2": "Sobre",
+    "b3": "Tecnologias",
+    "b4": "Projetos",
+    "b5": "Currículo",
+    "cvLink": "curriculo.pdf"
+  },
+  "header": {
+    "title": "Pedro Henrique Staub",
+    "subtitle": "Desenvolvedor Web FullStack",
+    "b1": "GitHub",
+    "b2": "LinkedIn",
+    "b3": "Telefone"
+  },
+  "footer": {
+    "b1": "Email",
+    "b2": "WhatsApp",
+    "b3": "LinkedIn",
+    "b4": "GitHub"
+  },
+  "cardsProject": {
+    "text1": "Acesse"
+  }
+}

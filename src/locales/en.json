@@ -1,0 +1,55 @@
+{
+  "portfolio": {
+    "title": "About me",
+    "text1": "My name is Pedro, I'm { age } years old. I'm a Full Stack Web Developer.",
+    "text2": "I have worked with web development since 2019, providing softwares to private security companies. The solutions I builded with my team have a daily impact on over <i>100.000</i> users around the world.<br /><br /> I am searching for new opportunities where I can apply my knowledge and experience built over the years and overcome new challenges.",
+    "title2": "Technologies",
+    "title3": "Projects"
+  },
+  "projects": {
+    "ibna": {
+      "name": "IBNA WEBSITE",
+      "text": "Website creade for IBNA SCS using PHP, JS, Bootstrap with the template Assan."
+    },
+    "solutio": {
+      "name": "SOLUTIO",
+      "text": "Participated on many private security projects using technologies such as: PHP, JS, HTML, CSS, MySql, Docker, etc..."
+    },
+    "dayz": {
+      "name": "DAYZ STATS",
+      "text": "API developed with PHP to export players data from a Dayz Server to a web dashboard."
+    },
+    "portfolio": {
+      "name": "Portfolio",
+      "text": "Portfolio developed with VueJS to display my personal projects and demonstrate my familiarity with the framework."
+    },
+    "discord": {
+      "name": "Discord Login",
+      "text": "Login button that authenticate through discord API. Developed with PHP."
+    }
+  },
+  "nav": {
+    "b1": "Contact",
+    "b2": "About",
+    "b3": "Technologies",
+    "b4": "Projects",
+    "b5": "Curriculum",
+    "cvLink": "CV_English.pdf"
+  },
+  "header": {
+    "title": "Pedro Henrique Staub",
+    "subtitle": "Full Stack Web Developer",
+    "b1": "GitHub",
+    "b2": "LinkedIn",
+    "b3": "Phone"
+  },
+  "footer": {
+    "b1": "Email",
+    "b2": "WhatsApp",
+    "b3": "LinkedIn",
+    "b4": "GitHub"
+  },
+  "cardsProject": {
+    "text1": "Go to"
+  }
+}

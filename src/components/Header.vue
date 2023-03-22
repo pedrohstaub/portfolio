@@ -6,23 +6,23 @@
                 <div><br><br><br><br></div>
                 <!-- <img src="@/assets/jpeg/18274435.jpeg" alt="Pedro"> -->
                 <!-- <img src="@/assets/png/teste.png" alt="Pedro"> -->
-                <h1>Pedro Henrique Staub</h1>
-                <h3>Desenvolvedor Web FullStack</h3>
+                <h1 v-html="$t('header.title')"></h1>
+                <h3 v-html="$t('header.subtitle')"></h3>
                 <div class="flex">
                     <a class="social" href="https://github.com/pedrohstaub" target="_blank">
                         <i class="devicon-github-original"></i>
-                        GitHub
+                        {{ $t('header.b1') }}
                     </a>&nbsp;
                     <a class="social" href="https://www.linkedin.com/in/pedro-henrique-staub-962141101/"
                         target="_blank">
                         <i class="devicon-linkedin-plain"></i>
-                        LinkedIn
+                        {{ $t('header.b2') }}
                     </a>&nbsp;
                     <a class="social" href="https://api.whatsapp.com/send?phone=5551997177824&text=Olá" target="_blank">
                         <span class="material-icons">
                             phone_android
                         </span>
-                        Telefone
+                        {{ $t('header.b3') }}
                     </a>
                 </div>
             </div>

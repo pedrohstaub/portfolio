@@ -10,7 +10,7 @@
             </div>
             <hr>
             <div class="card-footer">
-                <a v-if="link" :href="link" target="_blank"><span class="material-icons">public</span> Acesse </a>
+                <a v-if="link" :href="link" target="_blank"><span class="material-icons">public</span> {{ $t('cardsProject.text1') }} </a>
             </div>
         </div>
     </div>
