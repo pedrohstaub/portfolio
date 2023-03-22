@@ -175,7 +175,7 @@ a {
     .nav-list {
         position: absolute;
         top: 10vh;
-        right: 0;
+        right: 20px;
         width: 35vw;
         height: 92vh;
         backdrop-filter: blur(3px);
